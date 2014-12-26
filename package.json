@@ -1,0 +1,27 @@
+{
+  "name": "time-ago-filter",
+  "version": "1.0.0",
+  "description": "angularjs time ago will filter timestamp to time ago messages",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arbacuz/time-ago-filter.git"
+  },
+  "keywords": [
+    "angularjs",
+    "timeago",
+    "filter"
+  ],
+  "author": "arbacuz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arbacuz/time-ago-filter/issues"
+  },
+  "homepage": "https://github.com/arbacuz/time-ago-filter",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}

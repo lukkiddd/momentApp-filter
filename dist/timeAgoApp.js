@@ -1,4 +1,4 @@
-angular.module('timeAgoApp')
+angular.module('timeAgoApp', [])
 	.filter('timeago',function(){
 	return function(input) {
 

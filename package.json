@@ -22,6 +22,10 @@
   },
   "homepage": "https://github.com/arbacuz/time-ago-filter",
   "devDependencies": {
+    "angular-mocks": "^1.3.10",
     "grunt": "^0.4.5"
+  },
+  "dependencies": {
+    "angular": "^1.3.10"
   }
 }

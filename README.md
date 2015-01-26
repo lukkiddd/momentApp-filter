@@ -1,11 +1,11 @@
-time-ago-filter
+momentApp-filter
 ===============
 
 ##Get Started
 
-1. You can install `timeAgoFilter` by clone these to your computer.
-2. Include `timeAgoApp.js` in your `index.html`, after including Angular itself.
-3. Add `'timeAgoApp'` to your main module's list of dependencies.
+1. You can install `momentFilter` by clone these to your computer.
+2. Include `momentApp.js` in your `index.html`, after including Angular itself.
+3. Add `'momentApp'` to your main module's list of dependencies.
 
 ##Example
 
@@ -20,7 +20,7 @@ index.html
 <body>
 	
 	...
-	<small class="time"> {{result.timestamp | timeago}} </small>
+	<small class="time"> {{result.timestamp | moment}} </small>
 	<!-- result: (depends on your different of timestamp)
     "less than minute", "about a minute", "32 mins",
     "about an hour", "3 hrs", "yesterday", "2 days",
@@ -42,7 +42,15 @@ index.html
 
 myApp.js
 ```javascript
-var myApp = angular.module('myApp',['timeAgoApp']);
+var myApp = angular.module('myApp',['momentApp']);
 ...
 
 ```
+
+##Grunt and Karma test
+
+1. You can run karma testing and minifying untill linting the js by typing in your command line.
+```
+grunt
+```
+

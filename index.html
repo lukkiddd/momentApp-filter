@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Momentapp-filter by arbacuz</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/arbacuz/momentApp-filter">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/arbacuz/momentApp-filter/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/arbacuz/momentApp-filter/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Momentapp-filter</h1>
+          <p>AngularJS moment filter</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/arbacuz">arbacuz</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a id="momentapp-filter" class="anchor" href="#momentapp-filter" aria-hidden="true"><span class="octicon octicon-link"></span></a>momentApp-filter</h1>
+
+<h2>
+<a id="get-started" class="anchor" href="#get-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Get Started</h2>
+
+<ol>
+<li>You can install <code>momentFilter</code> by clone these to your computer.</li>
+<li>Include <code>momentApp.js</code> in your <code>index.html</code>, after including Angular itself.</li>
+<li>Add <code>'momentApp'</code> to your main module's list of dependencies.</li>
+</ol>
+
+<h2>
+<a id="example" class="anchor" href="#example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h2>
+
+<p>index.html</p>
+
+<div class="highlight highlight-html"><pre>
+&lt;!DOCTYPE html&gt;
+&lt;<span class="pl-ent">html</span> <span class="pl-e">lang</span>=<span class="pl-s1"><span class="pl-pds">"</span>en<span class="pl-pds">"</span></span> <span class="pl-e">ng-app</span>=<span class="pl-s1"><span class="pl-pds">"</span>myApp<span class="pl-pds">"</span></span>&gt;
+&lt;<span class="pl-ent">head</span>&gt;
+    ...
+&lt;/<span class="pl-ent">head</span>&gt;
+&lt;<span class="pl-ent">body</span>&gt;
+
+    ...
+    &lt;<span class="pl-ent">small</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>time<span class="pl-pds">"</span></span>&gt; {{result.timestamp | moment}} &lt;/<span class="pl-ent">small</span>&gt;
+    <span class="pl-c">&lt;!-- result: (depends on your different of timestamp)</span>
+<span class="pl-c">    "less than minute", "about a minute", "32 mins",</span>
+<span class="pl-c">    "about an hour", "3 hrs", "yesterday", "2 days",</span>
+<span class="pl-c">    "2 weeks", "1 month", "5 months", "y",</span>
+<span class="pl-c">    "more than 2 years"</span>
+<span class="pl-c">    --&gt;</span>
+    ...
+
+<span class="pl-s2">    &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s1"><span class="pl-pds">"</span>//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+<span class="pl-s2">    &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s1"><span class="pl-pds">"</span>../dist/timeAgoApp.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+<span class="pl-s2">    &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s1"><span class="pl-pds">"</span>../dist/myApp.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+
+    ...
+
+&lt;/<span class="pl-ent">body</span>&gt;
+&lt;/<span class="pl-ent">html</span>&gt;
+</pre></div>
+
+<p>myApp.js</p>
+
+<div class="highlight highlight-javascript"><pre><span class="pl-s">var</span> myApp <span class="pl-k">=</span> angular.module(<span class="pl-s1"><span class="pl-pds">'</span>myApp<span class="pl-pds">'</span></span>,[<span class="pl-s1"><span class="pl-pds">'</span>momentApp<span class="pl-pds">'</span></span>]);
+...
+</pre></div>
+
+<h2>
+<a id="grunt-and-karma-test" class="anchor" href="#grunt-and-karma-test" aria-hidden="true"><span class="octicon octicon-link"></span></a>Grunt and Karma test</h2>
+
+<ol>
+<li>You can run karma testing and minifying untill linting the js by typing in your command line.</li>
+</ol>
+
+<pre><code>grunt
+</code></pre>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>

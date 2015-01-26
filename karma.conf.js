@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Mon Jan 26 2015 00:28:38 GMT+0700 (ICT)
+// Generated on Mon Jan 26 2015 10:30:55 GMT+0700 (ICT)
 
 module.exports = function(config) {
   config.set({
@@ -10,15 +10,15 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha'],
+    frameworks: ['jasmine'],
 
 
     // list of files / patterns to load in the browser
     files: [
-        'node_modules/angular/angular.js',
-        'node_modules/angular-mocks/angular-mocks.js',
-        'dist/*.js',
-        'test/*.js'
+      'node_modules/angular/angular.js',
+      'node_modules/angular-mocks/angular-mocks.js',
+      'dist/*.js',
+      'test/*.js'
     ],
 
 
@@ -58,7 +58,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: [],
+    browsers: ['Chrome'],
 
 
     // Continuous Integration mode
